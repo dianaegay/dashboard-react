@@ -28,13 +28,13 @@ function Metrics(){
 							</div>
 						</div>
 
-						{/*<!-- Series in Data Base -->*/}
+						{/*<!-- Genres in Data Base -->*/}
 						<div className="col-md-4 mb-4">
 							<div className="card border-left-success shadow h-100 py-2">
 								<div className="card-body">
 									<div className="row no-gutters align-items-center">
 										<div className="col mr-2">
-											<div className="text-xs font-weight-bold text-success text-uppercase mb-1">Series in Data Base</div>
+											<div className="text-xs font-weight-bold text-success text-uppercase mb-1">Series en Data Base</div>
 											<div className="h5 mb-0 font-weight-bold text-gray-800">79</div>
 										</div>
 										<div className="col-auto">
@@ -45,13 +45,13 @@ function Metrics(){
 							</div>
 						</div>
 
-						{/*<!-- Total Length Movies -->*/}
+						{/*<!-- Actors Movies -->*/}
 						<div className="col-md-4 mb-4">
 							<div className="card border-left-warning shadow h-100 py-2">
 								<div className="card-body">
 									<div className="row no-gutters align-items-center">
 										<div className="col mr-2">
-											<div className="text-xs font-weight-bold text-warning text-uppercase mb-1">Total Length Movies
+											<div className="text-xs font-weight-bold text-warning text-uppercase mb-1">Total de duracion peliculas
 											</div>
 											<div className="h5 mb-0 font-weight-bold text-gray-800">49</div>
 										</div>
