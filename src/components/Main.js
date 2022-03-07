@@ -4,6 +4,7 @@ import LastMovie from './LastMovie';
 //import Movies from './Movies';
 import foto from '../assets/images/jordan-walke.png';
 import image from '../assets/images/logo-DH.png';
+import {Link} from 'react-router-dom';
 function Main(){
     return (
         <React.Fragment>
@@ -23,9 +24,10 @@ function Main(){
 
                 {/*<!-- Nav Item - Dashboard -->*/}
                 <li className="nav-item active">
-                    <a className="nav-link" href="/">
+                    <Link className="nav-link" to="/">
                         <i className="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard - DH movies</span></a>
+                        <span>Dashboard - DH movies</span>
+                        </Link>
                 </li>
 
                 {/*<!-- Divider -->*/}
@@ -36,17 +38,18 @@ function Main(){
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
-                    <a className="nav-link collapsed" href="/">
+                <Link className="nav-link collapsed" to="/LastMovie">
                         <i className="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
-                    </a>
+                        <span>Ultima pelicula</span>
+                    </Link>
                 </li>
 
                 {/*<!-- Nav Item - Charts -->*/}
                 <li className="nav-item">
-                    <a className="nav-link" href="/">
+                <Link className="nav-link" to="/Metrics">
                         <i className="fas fa-fw fa-chart-area"></i>
-                        <span>Charts</span></a>
+                        <span>Metricas</span>
+                      </Link>
                 </li>
 
                 {/*<!-- Nav Item - Tables -->*/}
