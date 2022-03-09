@@ -2,6 +2,7 @@ import React from 'react';
 import Main from './Main';
 import Metrics from './Metrics';
 import LastMovie from './LastMovie';
+import GenresInDb from './GenresInDb';
 import {Route, Switch} from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
             </Route>
             <Route path="/LastMovie">
                 <LastMovie />
+            </Route>
+            <Route path="/GenresInDb">
+                <GenresInDb />
             </Route>
       </Switch>
       </div>

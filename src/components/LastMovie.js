@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import imagenFondo from '../assets/images/mandalorian.jpg';
 
-function LastMovie(){
-    return(
-        <React.Fragment>
-         {/*<!-- Content Row Last Movie in Data Base -->*/}
-					
-						{/*<!-- Last Movie in DB -->*/}
+function LastMovie() {
+    const [lastMovie, setLastMovies] = useState([]);
+
+    useEffect(() => {   
+		fetch('api/lastmovie')
+		.then(response => response.json())
+		.then(data => {
+			setLastMovies(data.movie[data.movie.length-1])
+		})
+	},[])
+
+    return (
+
+
 						<div className="col-lg-6 mb-4">
 							<div className="card shadow mb-4">
 								<div className="card-header py-3">
@@ -17,13 +25,13 @@ function LastMovie(){
 										<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={imagenFondo} alt=" Star Wars - Mandalorian "/>
 									</div>
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa citationem ratione aperiam voluptatum non corporis ratione aperiam voluptatum quae dolorem culpa ratione aperiam voluptatum?</p>
-									<a className="btn btn-danger" target="_blank" rel="nofollow" href="/api/lastmovie">View movie detail</a>
+									<a className="btn btn-danger" target="_blank" rel="nofollow" href='/'>View movie detail</a>
 								</div>
 							</div>
 						</div>
                    
-						{/*<!-- End content row last movie in Data Base -->*/}
-        </React.Fragment>
+						
+
     )
 }
 
