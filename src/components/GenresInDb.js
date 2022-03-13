@@ -15,7 +15,7 @@ const GenresInDb = () => {
 
   const fondo = useRef();
   const titulo = useRef();
-  console.log(fondo.current);
+  
 
     return (
       <div className="col-lg-6 mb-4">

@@ -1,9 +1,11 @@
 import React from 'react';
 import Main from './Main';
 import Metrics from './Metrics';
+import SmallCard from './SmallCard';
 import LastMovie from './LastMovie';
 import GenresInDb from './GenresInDb';
 import {Route, Switch} from 'react-router-dom';
+
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
             </Route>
             <Route path="/Metrics">
                 <Metrics />
+                </Route>
+            <Route path="/SmallCard">
+                <SmallCard />
             </Route>
             <Route path="/LastMovie">
                 <LastMovie />
